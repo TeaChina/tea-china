@@ -115,7 +115,7 @@ class IndexRoute extends React.Component {
               </Card>
 
               <Diagram
-                containercss={{
+                containerCSS={{
                   borderTopLeftRadius: 0,
                   borderTopRightRadius: 0,
                   flex: `1 1 100%`,
@@ -176,7 +176,7 @@ class IndexRoute extends React.Component {
                   ))}
                   <CtaButton
                     to="/blog/"
-                    overridecss={{ marginBottom: rhythm(2) }}
+                    overrideCSS={{ marginBottom: rhythm(2) }}
                   >
                     Read More
                   </CtaButton>

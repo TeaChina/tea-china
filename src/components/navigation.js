@@ -185,7 +185,7 @@ export default ({ pathname }) => {
               ...socialIconsStyles,
             }}
           >
-            <DiscordIcon overridecss={{ verticalAlign: `text-top` }} />
+            <DiscordIcon overrideCSS={{ verticalAlign: `text-top` }} />
           </a>
           <a
             href="https://twitter.com/gatsbyjs"

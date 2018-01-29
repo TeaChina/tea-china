@@ -121,7 +121,7 @@ const MastheadBg = () => (
       <svg
         x="-15%"
         y="-10%"
-        css={{
+        style={{
           overflow: `visible`,
         }}
       >
