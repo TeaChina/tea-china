@@ -32,30 +32,125 @@ const lineAnimation = css.keyframes({
   },
 })
 
-const data = [{
-  name: 'Tanner Linsley',
-  age: 26,
-  friend: {
-    name: 'Jason Maurer',
-    age: 23,
-  }
-}]
+const data = [
+  {
+    name: 'Tanner X Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner YZ Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner X Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner YZ Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner X Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner YZ Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+  {
+    name: 'Tanner Linsley',
+    age: 26,
+    friend: {
+      name: 'Jason Maurer',
+      age: 23
+    }
+  },
+]
 
-const columns = [{
-  Header: 'Name',
-  accessor: 'name' // String-based value accessors!
-}, {
-  Header: 'Age',
-  accessor: 'age',
-  Cell: props => <span className='number'>{props.value}</span> // Custom cell components!
-}, {
-  id: 'friendName', // Required because our accessor is not a string
-  Header: 'Friend Name',
-  accessor: d => d.friend.name // Custom value accessors!
-}, {
-  Header: props => <span>Friend Age</span>, // Custom header components!
-  accessor: 'friend.age'
-}]
+const columns = [
+  {
+    Header: 'Name',
+    accessor: 'name',
+  }, 
+  {
+    Header: 'Age',
+    accessor: 'age',
+    Cell: props => <span className='number'>{props.value}</span> 
+  }, 
+  {
+    id: 'friendName', 
+    Header: 'Friend Name',
+    accessor: d => d.friend.name
+  }, 
+  {
+    Header: props => <span>Friend Age</span>,
+    accessor: 'friend.age'
+  }
+]
 
 
 const Segment = ({ className, children }) => (
@@ -303,6 +398,23 @@ const Diagram = ({ containerCSS }) => (
       <ReactTable
         data={data}
         columns={columns}
+        css={{
+          maxHeight: "500px"
+        }}
+        filterable
+        defaultFilterMethod={(filter, row) => {
+          if (row[filter.id].toLowerCase().includes(filter.value.toLowerCase()))
+            return String(row[filter.id]); 
+          }
+        }
+        defaultSorted={[
+          {
+            id: "age",
+            desc: true
+          }
+        ]}
+        defaultPageSize={10}
+        minRows={0}
         className="-striped -highlight"
       />    
     </Segment>
