@@ -1,5 +1,5 @@
 ---
-title: About Panda X
+title: About
 ---
 
 ## Our Mission

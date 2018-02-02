@@ -121,20 +121,18 @@ export default ({ pathname }) => {
           css={{
             alignItems: `center`,
             color: `inherit`,
-            display: `flex`,
+            display: `inline-block`,
             textDecoration: `none`,
             marginRight: rhythm(1 / 2),
           }}
         >
-          <img
-            src={logo}
-            css={{
-              height: 28,
-              width: `auto`,
-              margin: 0,
-            }}
-            alt=""
-          />
+          <object type="image/svg+xml" data={logo} style={{
+            height: 28,
+            width: `auto`,
+            margin: 0,
+            pointerEvents: 'none'
+          }}></object>
+
         </Link>
         <ul
           css={{

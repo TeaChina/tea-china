@@ -69,7 +69,7 @@ class DefaultLayout extends React.Component {
 
     return (
       <div>
-        <Helmet defaultTitle={`GatsbyJS`} titleTemplate={`%s | GatsbyJS`}>
+        <Helmet defaultTitle={`Panda X`} titleTemplate={`%s | Panda X`}>
           <meta name="twitter:site" content="@gatsbyjs" />
           <meta name="og:type" content="website" />
           <meta name="og:site_name" content="GatsbyJS" />
