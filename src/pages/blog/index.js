@@ -22,7 +22,7 @@ class BlogPostsIndex extends React.Component {
         }}
       >
         <Helmet>
-          <title>Blog</title>
+          <title>Updates</title>
         </Helmet>
         <Container
           css={{

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby`,
-    siteUrl: `https://www.gatsbyjs.org`,
-    description: `Blazing-fast static site generator for React`,
+    title: `Panda X`,
+    siteUrl: `https://www.pandax.io`,
+    description: `Panda X indexes dentmakers`,
   },
   mapping: {
     "MarkdownRemark.frontmatter.author": `AuthorYaml`,

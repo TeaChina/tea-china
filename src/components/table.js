@@ -12,6 +12,8 @@ import TechWithIcon from "../components/tech-with-icon"
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
 
+import data from '../data/companies'
+
 const stripeColor = `255, 255, 255, 0.9`
 const stripeSize = 15
 const stripeAnimation = css.keyframes({
@@ -32,159 +34,19 @@ const lineAnimation = css.keyframes({
   },
 })
 
-const data = [
-  {
-    company: 'Tencent',
-    valuation: 560,
-    founder: 'Pony Ma',
-    industry: 'Social network',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Alibaba',
-    valuation: 500,
-    founder: 'Jack Ma',
-    industry: 'eCommerce',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Baidu',
-    valuation: 80,
-    founder: 'Robbin Li',
-    industry: 'Search engine',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Xiaomi',
-    valuation: 50,
-    founder: 'Jun Lei',
-    industry: 'Mobile',
-    founded: 2008,
-    status: 'Private',
-  },
-  {
-    company: 'JD',
-    valuation: 60,
-    founder: 'Qiangdong Liu',
-    industry: 'eCommerce',
-    founded: 1990,
-    status: 'Public',
-  },
-  {
-    company: 'VIPShop',
-    valuation: 9,
-    founder: 'Ya Shen',
-    industry: 'eCommerce',
-    founded: 2008,
-    status: 'Public',
-  },
-  {
-    company: 'Tencent',
-    valuation: 560,
-    founder: 'Pony Ma',
-    industry: 'Social network',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Alibaba',
-    valuation: 500,
-    founder: 'Jack Ma',
-    industry: 'eCommerce',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Baidu',
-    valuation: 80,
-    founder: 'Robbin Li',
-    industry: 'Search engine',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Xiaomi',
-    valuation: 50,
-    founder: 'Jun Lei',
-    industry: 'Mobile',
-    founded: 2008,
-    status: 'Private',
-  },
-  {
-    company: 'JD',
-    valuation: 60,
-    founder: 'Qiangdong Liu',
-    industry: 'eCommerce',
-    founded: 1990,
-    status: 'Public',
-  },
-  {
-    company: 'VIPShop',
-    valuation: 9,
-    founder: 'Ya Shen',
-    industry: 'eCommerce',
-    founded: 2008,
-    status: 'Public',
-  },
-  {
-    company: 'Tencent',
-    valuation: 560,
-    founder: 'Pony Ma',
-    industry: 'Social network',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Alibaba',
-    valuation: 500,
-    founder: 'Jack Ma',
-    industry: 'eCommerce',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Baidu',
-    valuation: 80,
-    founder: 'Robbin Li',
-    industry: 'Search engine',
-    founded: 1999,
-    status: 'Public',
-  },
-  {
-    company: 'Xiaomi',
-    valuation: 50,
-    founder: 'Jun Lei',
-    industry: 'Mobile',
-    founded: 2008,
-    status: 'Private',
-  },
-  {
-    company: 'JD',
-    valuation: 60,
-    founder: 'Qiangdong Liu',
-    industry: 'eCommerce',
-    founded: 1990,
-    status: 'Public',
-  },
-  {
-    company: 'VIPShop',
-    valuation: 9,
-    founder: 'Ya Shen',
-    industry: 'eCommerce',
-    founded: 2008,
-    status: 'Public',
-  },
-]
 
 const columns = [
   {
+    id: 'company',
     Header: props => <b>Company</b>,
-    accessor: 'company',
-    Cell: props => <a href='/docs/'>{props.value}</a>,
-  }, 
+    accessor: d => d.company,
+    Cell: props => {
+      if (props.value.link != '')
+        return <a href={props.value.link}>{props.value.name}</a>
+      return <b>{props.value.name}</b>
+    }
+
+  },
   {
     id: 'valuation', 
     Header: props => <b>Valuation($B)</b>,
