@@ -34,121 +34,190 @@ const lineAnimation = css.keyframes({
 
 const data = [
   {
-    name: 'Tanner X Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'Tencent',
+    valuation: 560,
+    founder: 'Pony Ma',
+    industry: 'Social network',
+    founded: 1999,
+    status: 'Public',
   },
   {
-    name: 'Tanner YZ Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'Alibaba',
+    valuation: 500,
+    founder: 'Jack Ma',
+    industry: 'eCommerce',
+    founded: 1999,
+    status: 'Public',
   },
   {
-    name: 'Tanner Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'Baidu',
+    valuation: 80,
+    founder: 'Robbin Li',
+    industry: 'Search engine',
+    founded: 1999,
+    status: 'Public',
   },
   {
-    name: 'Tanner Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'Xiaomi',
+    valuation: 50,
+    founder: 'Jun Lei',
+    industry: 'Mobile',
+    founded: 2008,
+    status: 'Private',
   },
   {
-    name: 'Tanner X Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'JD',
+    valuation: 60,
+    founder: 'Qiangdong Liu',
+    industry: 'eCommerce',
+    founded: 1990,
+    status: 'Public',
   },
   {
-    name: 'Tanner YZ Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'VIPShop',
+    valuation: 9,
+    founder: 'Ya Shen',
+    industry: 'eCommerce',
+    founded: 2008,
+    status: 'Public',
   },
   {
-    name: 'Tanner Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'Tencent',
+    valuation: 560,
+    founder: 'Pony Ma',
+    industry: 'Social network',
+    founded: 1999,
+    status: 'Public',
   },
   {
-    name: 'Tanner Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'Alibaba',
+    valuation: 500,
+    founder: 'Jack Ma',
+    industry: 'eCommerce',
+    founded: 1999,
+    status: 'Public',
   },
   {
-    name: 'Tanner X Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'Baidu',
+    valuation: 80,
+    founder: 'Robbin Li',
+    industry: 'Search engine',
+    founded: 1999,
+    status: 'Public',
   },
   {
-    name: 'Tanner YZ Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'Xiaomi',
+    valuation: 50,
+    founder: 'Jun Lei',
+    industry: 'Mobile',
+    founded: 2008,
+    status: 'Private',
   },
   {
-    name: 'Tanner Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'JD',
+    valuation: 60,
+    founder: 'Qiangdong Liu',
+    industry: 'eCommerce',
+    founded: 1990,
+    status: 'Public',
   },
   {
-    name: 'Tanner Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23
-    }
+    company: 'VIPShop',
+    valuation: 9,
+    founder: 'Ya Shen',
+    industry: 'eCommerce',
+    founded: 2008,
+    status: 'Public',
+  },
+  {
+    company: 'Tencent',
+    valuation: 560,
+    founder: 'Pony Ma',
+    industry: 'Social network',
+    founded: 1999,
+    status: 'Public',
+  },
+  {
+    company: 'Alibaba',
+    valuation: 500,
+    founder: 'Jack Ma',
+    industry: 'eCommerce',
+    founded: 1999,
+    status: 'Public',
+  },
+  {
+    company: 'Baidu',
+    valuation: 80,
+    founder: 'Robbin Li',
+    industry: 'Search engine',
+    founded: 1999,
+    status: 'Public',
+  },
+  {
+    company: 'Xiaomi',
+    valuation: 50,
+    founder: 'Jun Lei',
+    industry: 'Mobile',
+    founded: 2008,
+    status: 'Private',
+  },
+  {
+    company: 'JD',
+    valuation: 60,
+    founder: 'Qiangdong Liu',
+    industry: 'eCommerce',
+    founded: 1990,
+    status: 'Public',
+  },
+  {
+    company: 'VIPShop',
+    valuation: 9,
+    founder: 'Ya Shen',
+    industry: 'eCommerce',
+    founded: 2008,
+    status: 'Public',
   },
 ]
 
 const columns = [
   {
-    Header: 'Name',
-    accessor: 'name',
+    Header: props => <b>Company</b>,
+    accessor: 'company',
+    Cell: props => <a href='/docs/'>{props.value}</a>,
   }, 
   {
-    Header: 'Age',
-    accessor: 'age',
-    Cell: props => <span className='number'>{props.value}</span> 
+    id: 'valuation', 
+    Header: props => <b>Valuation($B)</b>,
+    accessor: 'valuation',
+    Cell: props => <span className='number'>{props.value}</span>,
+    filterMethod: (filter, row) => {
+      if (filter.value < row[filter.id]) {
+        return row[filter.id];
+      }
+    }
   }, 
   {
-    id: 'friendName', 
-    Header: 'Friend Name',
-    accessor: d => d.friend.name
+    id: 'founder', 
+    Header: props => <b>Founder</b>,
+    accessor: 'founder'
   }, 
   {
-    Header: props => <span>Friend Age</span>,
-    accessor: 'friend.age'
+    Header: props => <b>Industry</b>,
+    accessor: 'industry'
+  },
+  {
+    Header: props => <b>Founded</b>,
+    accessor: 'founded',
+    Cell: props => <span className='number'>{props.value}</span>,
+    filterMethod: (filter, row) => {
+      if (filter.value < row[filter.id]) {
+        return row[filter.id];
+      }
+    }
+  },
+  {
+    Header: props => <b>Status</b>,
+    accessor: 'status'
   }
 ]
 
@@ -363,27 +432,26 @@ const Diagram = ({ containerCSS }) => (
     <h1 css={{ marginBottom: rhythm(1.5), ...scale(0.9) }}>The Panda X Dentmakers Index</h1>
     <div css={{ maxWidth: rhythm(30), margin: `0 auto ${rhythm(2)}` }}>
       <FuturaParagraph>
-        Gatsby lets you build blazing-fast sites with <em>your data</em>,
-        whatever the source. Liberate your sites from legacy CMSs and fly into
-        the future.
+        The Panda X Dentmakers Index is a daily ranking of China's largest technology companies.  Data for companies already on the leaderboard is updated when there is a new funding or valuation. Valuations credibly reported but not officially confirmed are marked with an asterisk.
+        Please reach out to <em css={{ color: colors.gatsby, fontStyle: `normal` }}>feedback@crunchbase.com</em> if a company is missing or if data needs updating.
       </FuturaParagraph>
     </div>
 
     <Segment className="Source">
-      <SegmentTitle>Data Sources</SegmentTitle>
+      <SegmentTitle>Statistics</SegmentTitle>
       <SourceItems>
         <SourceItem>
-          <ItemTitle>CMSs</ItemTitle>
-          <ItemDescription>Contentful, Drupal, WordPress, etc.</ItemDescription>
+          <ItemTitle>88</ItemTitle>
+          <ItemDescription>Companies</ItemDescription>
         </SourceItem>
         <SourceItem>
-          <ItemTitle>Markdown</ItemTitle>
-          <ItemDescription>Documentation, Posts, etc.</ItemDescription>
+          <ItemTitle>$1,500.54B</ItemTitle>
+          <ItemDescription>Total Valuation</ItemDescription>
         </SourceItem>
         <SourceItem>
-          <ItemTitle>Data</ItemTitle>
+          <ItemTitle>20</ItemTitle>
           <ItemDescription>
-            APIs, Databases, YAML, JSON, CSV, etc.
+            Public Companies
           </ItemDescription>
         </SourceItem>
       </SourceItems>
@@ -399,7 +467,7 @@ const Diagram = ({ containerCSS }) => (
         data={data}
         columns={columns}
         css={{
-          maxHeight: "500px"
+          maxHeight: "700px"
         }}
         filterable
         defaultFilterMethod={(filter, row) => {
@@ -409,8 +477,8 @@ const Diagram = ({ containerCSS }) => (
         }
         defaultSorted={[
           {
-            id: "age",
-            desc: true
+            id: "valudation",
+            desc: false
           }
         ]}
         defaultPageSize={10}

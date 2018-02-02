@@ -152,11 +152,9 @@ export default ({ pathname }) => {
             },
           }}
         >
-          <NavItem linkTo="/docs/">Docs</NavItem>
-          <NavItem linkTo="/tutorial/">Tutorial</NavItem>
-          <NavItem linkTo="/community/">Community</NavItem>
-          <NavItem linkTo="/features/">Features</NavItem>
-          <NavItem linkTo="/blog/">Blog</NavItem>
+          <NavItem linkTo="/community/">About</NavItem>
+          <NavItem linkTo="/docs/">Case study</NavItem>
+          <NavItem linkTo="/blog/">Updates</NavItem>
         </ul>
         <div
           css={{
@@ -167,26 +165,6 @@ export default ({ pathname }) => {
           {!isHomepage && (
             <SearchForm key="SearchForm" styles={{ ...navItemStyles }} />
           )}
-          <a
-            href="https://github.com/gatsbyjs/gatsby"
-            title="GitHub"
-            css={{
-              ...navItemStyles,
-              ...socialIconsStyles,
-            }}
-          >
-            <GithubIcon css={{ verticalAlign: `text-top` }} />
-          </a>
-          <a
-            href="https://discord.gg/0ZcbPKXt5bZjGY5n"
-            title="Discord"
-            css={{
-              ...navItemStyles,
-              ...socialIconsStyles,
-            }}
-          >
-            <DiscordIcon overrideCSS={{ verticalAlign: `text-top` }} />
-          </a>
           <a
             href="https://twitter.com/gatsbyjs"
             title="@gatsbyjs"

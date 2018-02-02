@@ -47,7 +47,7 @@ class IndexRoute extends React.Component {
             <Cards>
               <Card>
                 <CardHeadline>
-                  Modern web tech without the headache
+                  Growth story of the Chinese dentmakers
                 </CardHeadline>
                 <FuturaParagraph>
                   Enjoy the power of the latest web technologies –{` `}
@@ -58,7 +58,7 @@ class IndexRoute extends React.Component {
                 </FuturaParagraph>
               </Card>
               <Card>
-                <CardHeadline>Bring your own data</CardHeadline>
+                <CardHeadline>Startup wisdom from the East</CardHeadline>
                 <FuturaParagraph>
                   Gatsby’s rich data plugin ecosystem lets you build sites with
                   the data you want — from one or many sources: Pull data from
@@ -68,7 +68,7 @@ class IndexRoute extends React.Component {
                 </FuturaParagraph>
               </Card>
               <Card>
-                <CardHeadline>Scale to the entire internet</CardHeadline>
+                <CardHeadline>Scale to the entire world</CardHeadline>
                 <FuturaParagraph>
                   Gatsby.js is Internet Scale. Forget complicated deploys with
                   databases and servers and their expensive, time-consuming

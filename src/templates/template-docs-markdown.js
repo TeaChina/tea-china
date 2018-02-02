@@ -26,7 +26,6 @@ class DocsTemplate extends React.Component {
             __html: page.html,
           }}
         />
-        <MarkdownPageFooter page={page} />
       </Container>
     )
   }
