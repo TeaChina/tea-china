@@ -1,10 +1,14 @@
 ---
-title: "Announcing Gatsby 1.0.0 🎉🎉🎉"
-date: "2017-07-06"
-author: "Kyle Mathews"
-image: 'images/container-ship-leaving.jpg'
-showImageInArticle: false
-excerpt: Gatsby is your friendly, blazing fast static site generator for React. And after nearly a year of research, prototyping, and testing, Gatsby v1 is ready for action.
+title: Creating a Blog with Gatsby
+date: "2017-07-19"
+author: "Dustin Schau"
+image: "images/15009741473_9ced5e3209_o.jpg"
+imageAuthor: Daniel Go
+imageAuthorLink: "https://flic.kr/p/oSmRd6"
+imageTitle: "Old typewriter"
+canonicalLink: "https://objectpartners.com/2017/07/19/creating-a-static-blog-with-gatsby/"
+publishedAt: "Object Partners, Inc."
+excerpt: "In this post, we'll take a deep dive into Gatsby and some of the new 1.0 features by creating a static blog. Let's get on it!"
 draft: true
 ---
 
