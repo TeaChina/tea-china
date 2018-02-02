@@ -50,6 +50,7 @@
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
+    "react-table": "^6.7.6",
     "slash": "^1.0.0",
     "typeface-space-mono": "^0.0.40",
     "typeface-spectral": "^0.0.40",

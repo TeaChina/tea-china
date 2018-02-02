@@ -12,7 +12,7 @@ import UsedBy from "../components/used-by"
 import Cards from "../components/cards"
 import Card from "../components/card"
 import CardHeadline from "../components/card-headline"
-import Diagram from "../components/diagram"
+import Diagram from "../components/table"
 import BlogPostPreviewItem from "../components/blog-post-preview-item"
 import FuturaParagraph from "../components/futura-paragraph"
 import CtaButton from "../components/cta-button"
@@ -77,42 +77,6 @@ class IndexRoute extends React.Component {
                   dozens of services.
                 </FuturaParagraph>
               </Card>
-              <Card>
-                <CardHeadline>Future-proof your website</CardHeadline>
-                <FuturaParagraph>
-                  Don't build a website with last decade's tech. The future of
-                  the web is mobile, JavaScript and APIs—the {` `}
-                  <a href="https://jamstack.org/">JAMstack</a>. Every website is
-                  a web app and every web app is a website. Gatsby.js is the
-                  universal JavaScript framework you’ve been waiting for.
-                </FuturaParagraph>
-              </Card>
-              <Card>
-                <CardHeadline>
-                  <em css={{ color: colors.gatsby, fontStyle: `normal` }}>
-                    Static
-                  </em>
-                  {` `}
-                  Progressive Web Apps
-                </CardHeadline>
-                <FuturaParagraph>
-                  Gatsby.js is a static PWA (Progressive Web App) generator. You
-                  get code and data splitting out-of-the-box. Gatsby loads only
-                  the critical HTML, CSS, data, and JavaScript so your site
-                  loads as fast as possible. Once loaded, Gatsby prefetches
-                  resources for other pages so clicking around the site feels
-                  incredibly fast.
-                </FuturaParagraph>
-              </Card>
-              <Card>
-                <CardHeadline>Speed past the competition</CardHeadline>
-                <FuturaParagraph>
-                  Gatsby.js builds the fastest possible website. Instead of
-                  waiting to generate pages when requested, pre-build pages and
-                  lift them into a global cloud of servers — ready to be
-                  delivered instantly to your users wherever they are.
-                </FuturaParagraph>
-              </Card>
 
               <Diagram
                 containerCSS={{
@@ -131,7 +95,7 @@ class IndexRoute extends React.Component {
                       padding: `${rhythm(1)} 0 ${rhythm(2)}`,
                     }}
                   >
-                    <h1 css={{ marginTop: 0 }}>Curious yet?</h1>
+                    <h1 css={{ marginTop: 0 }}>Sign up for news</h1>
                     <FuturaParagraph>
                       It only takes a few minutes to get up and running!
                     </FuturaParagraph>

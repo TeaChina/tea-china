@@ -84,7 +84,7 @@ const MastheadContent = () => (
           },
         }}
       >
-        Blazing-fast static site generator for React
+        The Dentmakers from China
       </h1>
       <CtaButton to="/docs/">
         <span css={{ verticalAlign: `middle` }}>Get Started</span>
