@@ -34,7 +34,6 @@ const lineAnimation = css.keyframes({
   },
 })
 
-
 const columns = [
   {
     id: 'company',
@@ -329,7 +328,17 @@ const Diagram = ({ containerCSS }) => (
         data={data}
         columns={columns}
         css={{
-          maxHeight: "700px"
+          maxHeight: "700px",
+          [presets.MiniMobile]: {
+            maxWidth: "290px"
+          },
+          [presets.Mobile]: {
+            maxWidth: "320px"
+          },
+          [presets.Desktop]: {
+            maxWidth: "1000px"
+          },
+          
         }}
         filterable
         defaultFilterMethod={(filter, row) => {

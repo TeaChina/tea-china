@@ -2,6 +2,8 @@ import colors from "./colors"
 
 module.exports = {
   colors: colors,
+  minimobile: `(min-width: 300px)`,
+  MiniMobile: `@media (min-width: 300px)`,
   mobile: `(min-width: 400px)`,
   Mobile: `@media (min-width: 400px)`,
   phablet: `(min-width: 550px)`,
