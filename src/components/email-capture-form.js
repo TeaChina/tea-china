@@ -32,7 +32,7 @@ const formInputDefaultStyles = {
 // From: https://us17.admin.mailchimp.com/lists/integration/embeddedcode?id=XXXXXX
 // Where `XXXXXX` is the MC list ID
 // Note: we change `/post` to `/post-json`
-const MAILCHIMP_URL = `https://gatsbyjs.us17.list-manage.com/subscribe/post-json?u=1dc33f19eb115f7ebe4afe5ee&amp;id=f366064ba7`
+const MAILCHIMP_URL = `https://getpona.us17.list-manage.com/subscribe/post-json?u=fd1c295385b98b61b606c112a&amp;id=468a882a62`
 
 class EmailCaptureForm extends React.Component {
   constructor() {

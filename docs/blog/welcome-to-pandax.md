@@ -1,6 +1,6 @@
 ---
-title: "Announcing Gatsby 1.0.0 🎉🎉🎉"
-date: "2017-07-06"
+title: "Announcing pandaX"
+date: "2018-02-06"
 author: "Kyle Mathews"
 image: 'images/container-ship-leaving.jpg'
 showImageInArticle: false

@@ -129,7 +129,7 @@ class IndexRoute extends React.Component {
                       },
                     }}
                   >
-                    Latest from the Panda X
+                    Latest from the pandaX
                   </h2>
                   {blogPosts.edges.map(({ node }) => (
                     <BlogPostPreviewItem
