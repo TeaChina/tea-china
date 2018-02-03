@@ -43,6 +43,11 @@ const columns = [
       if (props.value.link != '')
         return <a href={props.value.link}>{props.value.name}</a>
       return <b>{props.value.name}</b>
+    },
+    filterMethod: (filter, row) => {
+      if (String(row[filter.id].name).toLowerCase().includes(filter.value.toLowerCase())) {
+            return String(row[filter.id]); 
+          }
     }
 
   },
