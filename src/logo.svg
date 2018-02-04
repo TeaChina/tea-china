@@ -1,10 +1,16 @@
-<?xml version="1.0" standalone="yes"?>
-<svg width="100%" height="100%" viewBox="0 0 360 110" version="1.1"  xmlns = 'http://www.w3.org/2000/svg'>
-    <defs>
-        <style type="text/css">
-            @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans:600,800'); 
-        </style>
-    </defs>
-    <text x="0" y="80" style="font-family: 'Berkshire Swash', cursive; font-weight:normal; font-style: normal; font-size: 100">panda</text>
-    <text x="260" y="80" style="font-family: 'Open Sans', sans-serif; font-weight:bold; font-style: black; font-size: 100;" fill="#663399">X</text>
+<svg width="100%" height="100%" viewBox="0 0 320 130" version="1.1" xmlns = 'http://www.w3.org/2000/svg'>
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans:600,800');
+
+    </style>
+  </defs>
+  <text x="0" y="103" style="font-family: 'Berkshire Swash', cursive; font-weight:normal; font-style: normal; font-size: 100">panda</text>
+
+  <g fill="#663399" transform="translate(260,52) scale(.5)">
+    <rect x="0" y="0" width="35" height="100" transform="skewX(40)" />
+    <rect x="84" y="0" width="35" height="100" transform="skewX(-40)" />
+    <rect x="35" y="0" width="15" height="100" transform="skewX(40)" fill="#ffffff" />
+    <rect x="119" y="0" width="15" height="100" transform="skewX(-40)" fill="#ffffff" />
+  </g>
 </svg>

@@ -127,7 +127,7 @@ export default ({ pathname }) => {
           }}
         >
           <object type="image/svg+xml" data={logo} style={{
-            height: 28,
+            height: 40,
             width: `auto`,
             margin: 0,
             pointerEvents: 'none'
