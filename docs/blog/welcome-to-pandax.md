@@ -1,5 +1,5 @@
 ---
-title: "Announcing pandaX"
+title: "Announcing pandax"
 date: "2018-02-06"
 author: "Kyle Mathews"
 image: 'images/container-ship-leaving.jpg'

@@ -295,10 +295,10 @@ const Diagram = ({ containerCSS }) => (
       },
     }}
   >
-    <h1 css={{ marginBottom: rhythm(1.5), ...scale(0.9) }}>The pandaX Dentmakers Index</h1>
+    <h1 css={{ marginBottom: rhythm(1.5), ...scale(0.9) }}>The panda<em css={{ color: colors.gatsby, fontStyle: `normal` }}>x</em> Dentmakers Index</h1>
     <div css={{ maxWidth: rhythm(30), margin: `0 auto ${rhythm(2)}` }}>
       <FuturaParagraph>
-        The pandaX Dentmakers Index is a daily ranking of China's largest technology companies.  Data for companies already on the leaderboard is updated when there is a new funding or valuation. Valuations credibly reported but not officially confirmed are marked with an asterisk.
+        The pandax Dentmakers Index is a daily ranking of China's largest technology companies.  Data for companies already on the leaderboard is updated when there is a new funding or valuation. Valuations credibly reported but not officially confirmed are marked with an asterisk.
         Please reach out to <em css={{ color: colors.gatsby, fontStyle: `normal` }}>feedback@crunchbase.com</em> if a company is missing or if data needs updating.
       </FuturaParagraph>
     </div>
