@@ -11,6 +11,8 @@ import FuturaParagraph from "./futura-paragraph"
 import { vP, vPHd, vPVHd, vPVVHd } from "../components/gutters"
 import { css } from "glamor"
 
+import EmailCaptureForm from "../components/email-capture-form-home"
+
 const MastheadContent = () => (
   <div
     className="masthead-content"
@@ -86,13 +88,7 @@ const MastheadContent = () => (
       >
         The Dentmakers from China
       </h1>
-      <CtaButton to="/docs/">
-        <span css={{ verticalAlign: `middle` }}>Get Started</span>
-        {` `}
-        <ArrowForwardIcon
-          css={{ verticalAlign: `baseline`, marginLeft: `.2em` }}
-        />
-      </CtaButton>
+      <EmailCaptureForm />
     </div>
   </div>
 )

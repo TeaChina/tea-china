@@ -18,6 +18,8 @@ import FuturaParagraph from "../components/futura-paragraph"
 import CtaButton from "../components/cta-button"
 import TechWithIcon from "../components/tech-with-icon"
 
+import EmailCaptureForm from "../components/email-capture-form-home"
+
 class IndexRoute extends React.Component {
   render() {
     const blogPosts = this.props.data.allMarkdownRemark
@@ -95,13 +97,11 @@ class IndexRoute extends React.Component {
                       padding: `${rhythm(1)} 0 ${rhythm(2)}`,
                     }}
                   >
-                    <h1 css={{ marginTop: 0 }}>Sign up for news</h1>
+                    <h1 css={{ marginTop: 0 }}>Get updates from pandax's Dentmakers Index</h1>
                     <FuturaParagraph>
-                      It only takes a few minutes to get up and running!
+                      It only takes a few seconds to get the up to day news!
                     </FuturaParagraph>
-                    <CtaButton to="/docs/" overridecss={{ marginTop: `1rem` }}>
-                      Get Started
-                    </CtaButton>
+                    <EmailCaptureForm />
                   </div>
                 </Container>
               </div>
